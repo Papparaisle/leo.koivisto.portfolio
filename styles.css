@@ -27,7 +27,7 @@ section {
     border-radius: 10px;
     box-shadow:
         inset 5px 5px 10px rgba(0,0,0,0.6),    /* vasen & ylä */
-        inset -5px -5px 10px rgba(255,255,255,0.1); /* oikea & ala */
+        inset -5px -5px 10px rgba(255,255,255,0.09); /* oikea & ala */
 }
 
 .profile {
@@ -44,12 +44,12 @@ section {
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     box-shadow: 5px 5px 10px rgba(0,0,0,0.6),
-              -5px -5px 10px rgba(255,255,255,0.1);
+              -5px -5px 10px rgba(255, 255, 255, 0.09);
 }
 
 .round-img {
-    width: 200px;
-    height: 200px;
+    width: 290px;
+    height: 290px;
     border-radius: 50%;
 }
 
