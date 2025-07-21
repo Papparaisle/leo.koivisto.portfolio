@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <title>Leo Koivisto &ndash; Portfolio</title>
     <link rel="icon" href="./images/LK-logo_round.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,20 +35,26 @@
     <section id="hello" class="container profile">
         <div>
             <h2>Hello World!</h2>
-            <p>Olen Leo Koivisto</p>
-            <p>Nuori tietoteknikko ja ohjelmoija</p>
-            <p>1</p>
-            <p>2</p>
-            <p>1</p>
-            <p>2</p>
-            <p>1</p>
-            <p>2</p>
-            <p>1</p>
-            <p>2</p>
-            <p>1</p>
-            <p>2</p>
-            <p>1</p>
-            <p>2</p>
+            <p>I am Leo Koivisto</p>
+            <p>Computer scientist and programmer</p>
+            <div class="link-buttons-container">
+                <div class="link-button" data-url="https://github.com/Papparaisle">
+                    <div class="github-bg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Codicons_%E2%80%93_github-inverted.svg" alt="GitHub profile" class="link-button-img"> 
+                    </div>
+                </div>
+                <div class="link-button" data-url="https://scratch.mit.edu/users/_Leo-/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" alt="Scratch profile" class="link-button-img">
+                </div>
+                
+            </div>
+            <div class="alert-text">
+                <p>This page is under construction.</p>
+                <p>The creation of the page began 19.7.2025.</p>
+                <p>Everything on the page has been made by me, using html, css and javascript.</p>
+            </div>
+
+
         </div>
         <div class="round-container">
             <img src="./images/Leo_hupulla.jpg" alt="Leo Koivisto" class="round-img">
@@ -53,18 +63,44 @@
 
     <section id="about" class="container">
         <h2>About</h2>
+        <ul>
+            <li>ikä</li>
+            <li>koulutus (koulut, freecodecamp, miten muuten olen oppinut)</li>
+            <li>kokemus (ja työkokemus)</li>
+            <li>millainen töyntekijä (kunnianhumoinen, nopea oppimaan, yksityiskohdat)</li>
+            <li></li>
+        </ul>
     </section>
 
     <section id="skills" class="container">
         <h2>Skills</h2>
+        <p>Language or other skill ............... skill level</p>
+        <ul>
+            <li>python</li>
+            <li>c++</li>
+            <li>scratch</li>
+            <li>math</li>
+            <li>LaTeX</li>
+            <li>julia</li>
+            <li>web development</li>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>git/github</li>
+            <li>graphic design</li>
+            <li>inkscape</li>
+        </ul>
     </section>
 
     <section id="projects" class="container">
         <h2>Projects</h2>
+        <p>Esitetty nätisti omina laatikoinaan (kohoumat), joissa kuvat projekteista.</p>
+        <p>Scratch-projektit avautuvat oman ikkunaan (muunnettu automaattisesti html:ksi, TurboWarpin avulla).</p>
     </section>
 
     <section id="contact" class="container">
         <h2>Contact</h2>
+        <p>For now, contacting not included to prevent spam.</p>
     </section>
 
     <br>
@@ -73,6 +109,7 @@
     </footer>
 
     <script src="./js/navbar.js" defer></script>
+    <script src="./js/link-buttons.js" defer></script>
 
 </body>
 

@@ -2,13 +2,18 @@ html {
     scroll-behavior: smooth;
     background-color: rgb(33, 32, 32);
     color: rgb(230, 230, 230);
-    font-size: 20px;
+    font-size: 21px;
+    font-family: Signika;
 }
 
 body {
     background-color: inherit;
     color: inherit;
     margin: 0;
+}
+
+.alert-text {
+    color: red;
 }
 
 section {
@@ -21,6 +26,10 @@ section {
     padding: 20px;
     box-sizing: border-box;    /* Sisällöt eivät riko leveyttä */
   }
+
+img {
+    display: block;
+}
 
 .container {
     background-color: rgb(27, 26, 26);
@@ -135,6 +144,54 @@ footer {
     font-size: 22px;
     color: rgb(229, 229, 229);
   }
+
+.link-buttons-container {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.link-button {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: rgb(33, 32, 32);
+    height: 48px;
+    width: 70px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6),
+        -2px -5px 10px rgba(255, 255, 255, 0.08);
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: rgb(90, 62, 62);
+}
+
+.link-button:active {
+    background-color: rgb(154, 63, 63);
+    /*box-shadow:
+        inset 5px 5px 10px rgba(0,0,0,0.7),
+        inset -5px -5px 10px rgba(255,255,255,0.19);*/
+}
+
+.github-bg {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: none;
+}
+
+.link-button-img {
+    height: 36px;
+    width: auto;
+    user-select: none;
+}
 
 @media (max-width: 1360px) {
     section {
