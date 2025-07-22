@@ -1,5 +1,5 @@
 
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll(".nav-link");
 
 const observer = new IntersectionObserver(entries => {
