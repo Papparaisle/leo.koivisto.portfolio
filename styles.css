@@ -7,10 +7,11 @@
 html {
     scroll-behavior: smooth;
     background-color: rgb(33, 32, 32);
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     font-size: 22px;
     font-family: Signika;
 }
+
 
 body {
     background-color: inherit;
@@ -18,15 +19,27 @@ body {
     margin: 0;
 }
 
-.alert-text {
+.notification-text {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
     color: red;
+}
+
+.notification-text p {
+    margin: 8px;
 }
 
 header {
     background-color: rgb(23, 22, 22);
-    min-height: 100vh;
+    min-height: 780px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     box-shadow:
         inset 0 5px 10px rgba(0,0,0,0.6),    /* vasen & ylä */
         inset 0 -5px 10px rgba(255,255,255,0.09); /* oikea & ala */
@@ -49,12 +62,27 @@ header p {
     padding: 80px 0;
 }
 
+
+.ball-container {
+    width: calc(min(1000px, calc(100% - 345px)) - 28px);
+    height: 350px;
+    border: 14px solid rgb(33, 32, 32);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    box-shadow:
+        inset 5px 5px 10px rgba(0,0,0,0.6),
+        inset -5px -5px 10px rgba(255,255,255,0.09),
+        5px 5px 10px rgba(0,0,0,0.6),
+        -5px -5px 10px rgba(255, 255, 255, 0.09);
+}
+
 section {
     width: 100%;
     max-width: min(1000px, calc(100% - 345px));         /* Maksimileveys, jota ei ylitetä */
     min-height: 500px;
-    margin: 50px auto;            /* Keskittää vaakasuunnassa */
-    margin-bottom: 70px;
+    margin: 80px auto;            /* Keskittää vaakasuunnassa */
+    margin-bottom: 80px;
     scroll-margin-top: 50px;
     padding: 20px;
     box-sizing: border-box;    /* Sisällöt eivät riko leveyttä */
@@ -62,13 +90,13 @@ section {
 
 img {
     display: block;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 h2 {
     font-weight: 600;
 }
-
-
 
 .theme-color {
     color: var(--theme-color-light);
@@ -91,8 +119,9 @@ h2 {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.6),
-              -5px -5px 10px rgba(255, 255, 255, 0.09);
+    box-shadow:
+                5px 5px 10px rgba(0,0,0,0.6),
+                -5px -5px 10px rgba(255, 255, 255, 0.09);
 }
 
 .round-img {
@@ -226,8 +255,6 @@ footer {
 .link-button-img {
     height: 36px;
     width: auto;
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 @media (max-width: 1360px) {
