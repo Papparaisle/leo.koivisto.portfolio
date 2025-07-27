@@ -1,3 +1,4 @@
+
 :root {
     --theme-color-light: #59c81d;
     --theme-color: #458422;
@@ -8,7 +9,7 @@ html {
     scroll-behavior: smooth;
     background-color: rgb(33, 32, 32);
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 21px;
     font-family: Signika;
 }
 
@@ -30,18 +31,18 @@ body {
 }
 
 .notification-text {
-    position: fixed;
-    top: 80px;
-    left: 10px;
-    width: 200px;
+    max-width: min(1000px, calc(100% - 345px));
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     font-size: 20px;
     color: red;
+    margin: 0 0 40px 0;
+    
 }
 
 .notification-text p {
-    margin: 8px;
+    margin: 0 0 18px 0;
 }
 
 header {
@@ -53,6 +54,14 @@ header {
     box-shadow: 
         inset 0 5px 10px rgba(0, 0, 0, 0.6),
         inset 0 -5px 10px rgba(255, 255, 255, 0.09);
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 26px;
 }
 
 header h2 {
@@ -95,8 +104,12 @@ section {
     margin: 80px auto;
     margin-bottom: 80px;
     scroll-margin-top: 50px;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
+}
+
+h3 {
+    color: var(--theme-color-light);
 }
 
 img {
@@ -254,6 +267,10 @@ nav {
         inset -5px -5px 10px rgba(255,255,255,0.19);*/
 }
 
+.explanation {
+    color: rgba(255, 255, 255, 0.712);
+}
+
 .github-bg {
     width: 36px;
     height: 36px;
@@ -309,4 +326,5 @@ nav {
     header {
         padding-top: 50px;
     }
+
 }
